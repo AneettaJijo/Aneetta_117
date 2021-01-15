@@ -1,0 +1,148 @@
+
+<html lang="en">
+<head>
+  <title>homevedic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+	  body{
+  background-image:url(ayurvedic_diet-6466.jpg);
+  background-size: cover;
+  font-family: Intro Cond Thin;
+  margin-top:5px;
+  }
+  h1{
+  text-align:left;
+  margin:20px;
+  color:white;
+      }
+	p {
+	color:black;
+	margin:20px;
+	
+	}
+	ul {
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+  overflow: hidden;
+  background:rgba(0,0,0,0.6); 
+   
+  }
+
+li {
+  display: inline;
+  float:left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 29px 30px;
+  text-decoration: none;
+  }
+li a:hover {
+  background-color: #111;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+  font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-decoration: none;
+  color: #111;
+}
+
+
+    a:hover{border-bottom: 1px solid #111;} 
+    h1{font-size: 2em; padding: 20px 0; }
+	.container  h4{font-size: 2em; padding: 20px 0; float:right; color:white; margin-right:60px;}
+	.containers  h4{font-size: 2em; float:right; color:white;  margin-right:-670px; margin-top:25px;}
+    p.conts{
+      font-size: .80em;
+	  font-weight:900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 20px 0;
+	  font-style:Sans Bold;
+    }
+
+    button:hover{cursor: pointer}
+   .container button {
+      background:  rgb(236, 240, 241); outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 15px ;
+      overflow: hidden;
+	 float:right;
+	margin:20px;
+	text-decoration:none;
+	  
+    }
+	.containers button {
+      background: rgb(236, 240, 241);  outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 17px ;
+      overflow: hidden;
+	 float:right;
+	margin-right:510px;
+	text-decoration:none;
+	  
+    }
+
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(100%,0)}
+      button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }
+	 
+  </style>
+  </head>
+  <body>
+  <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="welcome.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
+		</ul></nav>
+  <h1>About us ......</h1>
+  <p class="conts"> We will make users to identify the ayurvedic herbs while providing it’s pictures,name and it’s botanical name.<br>
+  We will provide climatic conditions of each herbs that suits and describes it’s growing process.<br>
+  Provides medicinal uses of herbs and which part of herb is used as medicine.<br>
+  Most attractive outlook of our website is we will make an opportunity for users to buy herbs.<br>
+  The users can view  it’s price ,quantity,add their comments,to place rating for the website and they are  able to contact the seller for further details.
+  </p>
+</div>
+
+
+
+<section class="container">
+  <h4>You  Havent Created Account ? </h4>
+    <a href="lo.html"><button data-hover="Create"><div>click me!</div></button></a><br><br><br>
+<section class="containers">	
+  <h4> Please Login If You Have Account . </h4><br>
+  <a href="prod.html"><button data-hover="Login"><div> click me!</div></button> </a>
+  </body>
+  </html>

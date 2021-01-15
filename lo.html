@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,initial.scale=1.0">
+    <meta http-equiv=" x-UA-compatible" content="ie=edge"/>
+    <title>Login form</title>
+
+<style>
+    *::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0%;
+}
+body{
+    font-family: Arial,Helvetica,sans-serif;
+    background:#ededed;
+    background-image:url(Ayurvedic.jpg);
+}
+input,
+button{
+    border:none;
+    outline:none;
+    background:none;
+}
+.cont{
+    overflow:hidden;
+    position:relative;
+    width:900px;
+    height:550px;
+    margin:0 auto 100px;
+    background:-webkit-linear-gradient(left,#7579ff,#b224ef);
+}
+.form{
+    position:relative;
+    width:790px;
+    height:100px;
+    padding:50px 30px 0;
+}
+
+.button {
+    display:block;
+    margin-top:40px;
+    margin-bottom:20px;
+    margin-left: 260px;
+    width:270px;
+    height:36px;
+    border-radius: 30px;
+    color:#fff;
+    font-size: 25px;
+    cursor:pointer;
+    position:absolute;
+    background-color:#0ad4b3;
+    text-align: center;
+    text-decoration:none;
+}
+.button:hover{
+    opacity:0.7;
+}
+
+
+
+h1{
+    width:100%;
+    font-size: 26px;
+    text-align: center;
+}
+label{
+    display: block;
+    width:260px;
+    margin:25px auto 0;
+    text-align:center;
+}
+label span{
+    font-size:12px;
+    color:#660099;
+    text-transform: uppercase;
+}
+input{
+    display:block;
+    width:100%;
+    margin-top:5px;
+    padding-bottom: 5px;
+    font-size:16px;
+    border-bottom:1px solid rgba(0,0,0,0.4);
+    text-align:center;
+}
+.forget-password {
+    margin-top: 15px;
+    text-align: center;
+    font-size:12px;
+    color:#660099;
+}
+select{
+    display:block;
+    width:50%;
+    margin:15px auto 0;
+    border-style:groove;
+    text-align:center;
+    background:#ffffff00
+}
+</style>
+</head>
+<body>
+
+    <form action="lo.php" method="POST">
+    <div class="cont">
+        <div class="form sign-up">
+            <h1>WELCOME</h1>
+            <label for="">
+                <span>
+                    USER ID
+                </span>
+                <input type="user id" name="userid">
+            </label>
+            <label for="">
+                <span>
+                    PASSWORD
+                </span>
+                <input type="password" name="password">
+            </label>
+                <p class="forget-password"><a href="#">Forget Password?</a></p>
+                <label for="">
+                    <span>
+                        Category
+                    </span>
+                </label>
+                <select name="category" >
+                    <option>SELLER</option>
+                    <option>BUYER</option>
+                    <option>ADMIN</option>
+                </select>
+                <input type="submit" value="login" id="login btn"	class="button" name="submit">
+        </div>  
+    </div>
+    </form>
+</body>
+</html>
